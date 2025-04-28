@@ -1,0 +1,32 @@
+@media print {
+  @page {
+    size: A4;
+    margin: 0;
+  }
+  html,
+  body {
+    width: 210mm;
+    height: 297mm;
+    margin: 0;
+    padding: 0;
+    background: white;
+    font-size: 10pt;
+  }
+  .no-print {
+    display: none;
+  }
+  .shadow-lg,
+  .shadow-md {
+    box-shadow: none !important;
+  }
+  .bg-blue-800 {
+    background: #1e3a8a !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  .bg-blue-100 {
+    background: #e0f2fe !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+}
